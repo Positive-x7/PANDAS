@@ -2,6 +2,7 @@
 import pandas as pd
 df = pd.read_csv('StudentsPerformance.csv')
 
+'''все кратко '''
 #print(df.info())
 
 '''Образование родителей'''
@@ -39,7 +40,20 @@ df = pd.read_csv('StudentsPerformance.csv')
 #d = (df['test preparation course'] == 'completed').sum()
 #print(d)
 
-zz = df[df['test preparation course'] == 'completed']['math score'].max()
-print(zz)
-z = df[df['test preparation course'] == 'none']['math score'].max()
-print(z)
+#zz = df[df['test preparation course'] == 'completed']['math score'].mean()
+#print(zz)
+#z = df[df['test preparatio course'] == 'none']['math score'].mean()
+#print(z)
+
+
+
+#print(df['writing score'].agg(['min', 'mean', 'max']))
+
+
+#l = df[df['gender'] == 'male']['math score'].mean()
+#k = df[df['gender'] == 'female']['math score'].mean()
+#print(l - k)
+
+
+#v = ((df['race/ethnicity'] == 'group B') & (df['math score'] < 80)).sum()
+#print(v)
