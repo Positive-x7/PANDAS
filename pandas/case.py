@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv('StudentsPerformance.csv')
 
 '''все кратко '''
-#print(df.info())
+print(df.info())
 
 '''Образование родителей'''
 #print(df['parental level of education'])
